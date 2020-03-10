@@ -28,8 +28,9 @@ p{
   color:white;
   opacity:0.9;
    display: block;
- /*  overflow: auto;*/
+   overflow: auto;
   text-align: justify;
+  margin: auto;
 }
 .modal{
   background-color: rgba(0,0,0,.8);

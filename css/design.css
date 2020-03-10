@@ -22,7 +22,7 @@ p{
 
 .modal-contenido{
   background-color:rgba(0,0,0,0);
-  width:90%;
+  width:80%;
   height: 90%;
   position: absolute;
   color:white;
@@ -41,7 +41,7 @@ p{
   opacity:0;
   pointer-events:none;
   transition: all 1s;
-
+  text-align: justify;
 }
 #modalText1:target, #modalText2:target,
 #modalText3:target, #modalText4:target,

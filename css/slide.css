@@ -1,0 +1,241 @@
+
+/*Estilo de meú desplegable*/
+.accordion {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 10px;
+  width: 4%;
+  border: none;
+  text-align: left;
+  margin-left: 5px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover, .btnInfo:hover {
+  background-color: #ccc;
+}
+
+.accordion:after, .btnInfo:after {
+  content: '[\002B]';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+.btnInfo{
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 10px;
+  width: 5%;
+  border: none;
+  text-align: center;
+  margin-left: 5px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+  /*content: "[\002B]";*/
+}
+
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 40%;
+  overflow: auto;  
+  transition: max-height 0.2s ease-out;
+  color: black;
+  display: block;
+}
+
+
+.imgCont2{
+  width: 60%;
+  display:block;
+  margin:auto;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  /*max-width: 1000px;*/
+  /*max-width: 60%;*/
+  width: 55%;
+  position: relative;
+  margin: auto;
+  margin-right: 3%;
+  float: right;
+
+}
+.slideshow-container2 {
+  /*max-width: 1000px;*/
+  /*max-width: 60%;*/
+  width: 55%;
+  position: relative;
+  margin: auto;
+  margin-right: 3%;
+  float: right;
+  display: block;
+}
+
+.slideshow-container3 {
+  /*max-width: 1000px;*/
+  /*max-width: 60%;*/
+  width: 70%;
+  position: relative;
+  margin: auto;
+  margin-right: 3%;
+  display: block;
+}
+
+
+.description{
+  float: left;
+  text-align: left;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.contentInfo{
+  float: left;
+  text-align: left;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+/* Esconde las imagenes por default */
+.mySlides {
+  display: none;
+}
+
+.mySlides2 {
+  display: none;
+}
+.mySlides3 {
+  display: none;
+}
+
+/* botónes de siguiente y previo*/
+.next, .prev {
+  cursor: pointer;
+  position: relative;
+  top: 100%;
+  width: auto;
+ /* margin-top: -22px;*/
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  float: right;
+}
+
+ .next2, .prev2 {
+  cursor: pointer;
+  position: relative;
+  top: 100%;
+  width: auto;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 0.5em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  float: right;
+}
+ .next3, .prev3 {
+  cursor: pointer;
+  position: relative;
+  top: 100%;
+  width: auto;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  float: right;
+}
+
+/* se posiciona a la derecha el botón "next" */
+.next, .next2, .next3 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Cuando se posicióna el mouse sobre el elemento se grisea */
+.prev:hover, .next:hover, .next2:hover, .prev2:hover, .next3:hover, .prev3:hover {
+  background-color: rgba(9,9,9,0.6);
+}
+
+/* Texto auxiliar */
+.text {
+  color: #222;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Numero de texto (1/3 etc) */
+.numbertext {
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+./*dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}*/
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+

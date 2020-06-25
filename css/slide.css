@@ -31,7 +31,8 @@
 }
 .btnInfo{
   background-color: #fff;
-  color: #000;
+  /*color: #000;*/
+  font-color:#000;
   cursor: pointer;
   padding: 10px;
   width: 5%;
@@ -44,56 +45,44 @@
   /*content: "[\002B]";*/
 }
 
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 40%;
-  overflow: auto;  
-  transition: max-height 0.2s ease-out;
-  color: black;
-  display: block;
-}
-
-
 .imgCont2{
   width: 60%;
+  height: auto;
   display:block;
   margin:auto;
 }
 
-* {box-sizing:border-box}
+/** {box-sizing:border-box}*/
 
 /* Slideshow container */
 .slideshow-container {
-  /*max-width: 1000px;*/
-  /*max-width: 60%;*/
-  width: 55%;
+    width: 65%;
+  /*height: auto;*/
+  height: 80%;
   position: relative;
   margin: auto;
   margin-right: 3%;
   float: right;
+  display: block;
 
 }
 .slideshow-container2 {
-  /*max-width: 1000px;*/
-  /*max-width: 60%;*/
-  width: 55%;
+  width: 65%;
+  /*height: 50%;*/
   position: relative;
   margin: auto;
   margin-right: 3%;
   float: right;
-  display: block;
+  display: none;
 }
 
 .slideshow-container3 {
-  /*max-width: 1000px;*/
-  /*max-width: 60%;*/
-  width: 70%;
+   width: 90%;
+   height: auto;
   position: relative;
   margin: auto;
-  margin-right: 3%;
-  display: block;
+  overflow: auto;
+  /*display: none;*/
 }
 
 
@@ -103,24 +92,77 @@
   position: relative;
   width: 100%;
   display: block;
+  font-size: 15;
 }
-.contentInfo{
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 40%;
+  overflow: auto;  
+  transition: max-height 0.2s ease-out;
+  color: black;
+  display: none;
+  float: right; 
+}
+
+.contentInfo1, .contentInfo2, .contentInfo3, .contentInfo4, .contentInfo5,
+.contentInfo6, .contentInfo7, .contentInfo8, .contentInfo9, .contentInfo10,
+.contentInfo11, .contentInfo12{
   float: left;
   text-align: left;
   position: relative;
   width: 100%;
   display: block;
+  margin: 2%;
+  padding-left: 5%;
+
 }
 /* Esconde las imagenes por default */
-.mySlides {
+.mySlides, .slideP1, .slideP2, .slideP3, .slideP4,
+.slideP5, .slideP6, .slideP7, .slideP8, .slideP9, 
+.slideP10, .slideP11, .slideP12 {
   display: none;
-}
 
+}
+/*
 .mySlides2 {
   display: none;
-}
-.mySlides3 {
+}*/
+.mySlides3, .modalSlideP2, .modalSlideP3, .modalSlideP4, .modalSlideP5, .modalSlideP6,
+.modalSlideP7, .modalSlideP8, .modalSlideP9, .modalSlideP10, .modalSlideP11, .modalSlideP12 {
   display: none;
+}
+.imageSlde{
+  width: auto;
+  height: 90%;
+  text-align: center;
+  margin: auto;
+  display: block;
+  /*max-height: 80%;*/
+}
+/*#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8{
+  width: 1000px;
+  height: 800px;
+}*/
+
+.back{
+  font-size: 2em;
+  width: auto;
+  position: relative;
+  float: left;
+  margin: auto;
+  display: none;
+}
+.back:hover {
+  background-color: #bbb;
+  }
+
+.dvbck{
+  position: relative;
+  margin: auto;
+  width: auto;
+
 }
 
 /* botónes de siguiente y previo*/
@@ -128,7 +170,9 @@
   cursor: pointer;
   position: relative;
   top: 100%;
-  width: auto;
+  width: 100%
+  height: auto
+  margin: auto;
  /* margin-top: -22px;*/
   padding: 10px;
   color: black;
@@ -140,7 +184,9 @@
   float: right;
 }
 
- .next2, .prev2 {
+ .next2, .prev2, .next1, .prev1, .nextP3, .prevP3, .nextP4, .prevP4, 
+ .nextP5, .prevP5, .nextP6, .prevP6, .nextP7, .prevP7, .nextP8, .prevP8,
+ .nextP9, .prevP9, .nextP10, .prevP10, .nextP11, .prevP11, .nextP12, .prevP12 {
   cursor: pointer;
   position: relative;
   top: 100%;
@@ -148,7 +194,7 @@
   padding: 10px;
   color: black;
   font-weight: bold;
-  font-size: 0.5em;
+  font-size: 16px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -170,14 +216,21 @@
 }
 
 /* se posiciona a la derecha el botón "next" */
-.next, .next2, .next3 {
+.next, .next1, .next2, .next3 {
   right: 0;
-  border-radius: 3px 0 0 3px;
+ /* border-radius: 3px 0 0 3px;*/
 }
 
 /* Cuando se posicióna el mouse sobre el elemento se grisea */
-.prev:hover, .next:hover, .next2:hover, .prev2:hover, .next3:hover, .prev3:hover {
+.next1:hover, .prev1:hover, .next2:hover, .prev2:hover, .next3:hover, .prev3:hover,
+.nextP3:hover, .prevP3:hover, .nextP4:hover, .prevP4:hover,  .nextP5:hover, .prevP5:hover,
+.nextP6:hover, .prevP6:hover {
   background-color: rgba(9,9,9,0.6);
+}
+.prev:hover, .next:hover{
+ background-color: rgba(9,9,9,0.6);
+ padding: 10px;
+  
 }
 
 /* Texto auxiliar */
@@ -210,13 +263,13 @@
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-}*/
+} */
 
 .active, .dot:hover {
   background-color: #717171;
 }
 
-/* Fading animation */
+/* animación de desvanecimiento */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;

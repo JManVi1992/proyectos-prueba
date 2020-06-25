@@ -26,11 +26,11 @@
 		<a href="Index.html" class="header">SANTIAGO BORJA</a>
 	</div>
 	<div class="topnavV"  id="myTopnav">
-   		<a href="about.html" onclick="vertical()">ABOUT</a>
-  		<a href="work.html">WORK</a>
-  		<a href="text.html">TEXT</a>
-  		<a href="news.html">NEWS</a>
-  		<a href="contact.html">CONTACT</a>
+   		<a href="about.html" class="option" onclick="vertical()">ABOUT</a>
+  		<a href="work.html" class="option">WORK</a>
+  		<a href="text.html" class="option">TEXT</a>
+  		<a href="news.html" class="option">NEWS</a>
+  		<a href="contact.html" class="option" style="background-color: #bbb;">CONTACT</a>
   		<!--<a href="javascript:void(0);" class="icon" onclick="window.onload=myFunction()">-->
     	<i class="fa fa-bars"></i>
 	</div>
@@ -41,14 +41,14 @@
 		
 		 <br>
 		 <br>
-		 <form name="frmContacto" method="post" action="sendbymail.php">
+		 <form name="frmContacto" method="post" action="php/sendMail.php">
 <table >
 <tr>
 <td class="cloumnLbl">
-<label for="first_name" class="lblMail">Name: </label>
+<label for="name" class="lblMail">Name: </label>
 </td>
 <td class="columnInpt">
-<input type="text" name="first_name" class="inptMail">
+<input type="text" name="name" class="inptMail">
 </td>
 </tr>
 
@@ -62,10 +62,10 @@
 </tr>
 <tr>
 <td class="cloumnLbl">
-<label for="telephone">Subject:</label>
+<label for="subject">Subject:</label>
 </td>
 <td class="columnInpt">
-<input type="text" name="telephone" class="inptMail">
+<input type="text" name="subject" class="inptMail">
 </td>
 </tr>
 
